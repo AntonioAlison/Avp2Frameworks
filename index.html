@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>DinizSupermercados</title>
+</head>
+<header class="h-16 border-b-2 border-blue-700">
+  <nav class="flex justify-between items-center h-full px-4">
+    <figure>
+     <img src="https://www.dinizsupermercados.com.br/assets/img/header-logo.png" alt="logo"class="h-20 w-auto">
+   </figure>
+   <form action="#" method="GET" class="flex items-center space-x-2 border border-blue-500 rounded-lg px-4 py-1">
+    <input type="text" name="search" placeholder="Buscar produtos..." class="outline-none px-4 py-1 rounded-md">
+    <button type="submit" class="botton">
+      Buscar
+    </button>
+  </form>
+   <div class="flex items-center space-x-4">
+    <a href="login.html" class="btn text-orange-600 hover:text-blue-500 transition-colors duration-300">
+      Olá, faça seu login ou cadastre-se 
+    </a>
+   </div>
+  </nav>
+</header>
+<nav>
+  <ul class="flex items-center justify-center space-x-4 h-10 bg-orange-600">
+    <li><a href="#" class="navtext">Departamentos</a></li>
+    <li><a href="#" class="navtext">Ofertas</a></li>
+    <li><a href="#" class="navtext">Receitas</a></li>
+    <li><a href="#" class="navtext">Mais vendidos</a></li>
+  </ul>
+</nav>
+<body class="">
+  <!-- Carrossel -->
+  <div class="relative w-full max-w-5xl min-h-96 mx-auto mt-2 overflow-hidden">
+    <div class="flex transition-transform duration-500" id="carouselTrack">
+        <div class="imgscarrosel">
+            <img src="https://s3.amazonaws.com/dinizsupermercados.com.br/files/banner_imagens/Promocao-Elma-Chips-Diniz-25-10-6-lPcnPp.png" class="w-auto h-full object-cover" alt="Imagem 1" class="w-full h-auto">
+        </div>
+        <div class="imgscarrosel">
+            <img src="https://s3.amazonaws.com/dinizsupermercados.com.br/files/banner_imagens/Top100-21-11-App-5-BKBape.png" alt="Imagem 2" class="w-full h-auto">
+        </div>
+        <div class="imgscarrosel">
+            <img src="https://s3.amazonaws.com/dinizsupermercados.com.br/files/banner_imagens/Design-sem-nome-21-HBmfIl.jpg" alt="Imagem 3" class="w-full h-auto">
+        </div>
+        <div class="imgscarrosel">
+            <img src="https://s3.amazonaws.com/dinizsupermercados.com.br/files/banner_imagens/Dica-de-Churrasco-21-11-App-5-JNEhgh.png" alt="Imagem 4" class="w-full h-auto">
+        </div>
+    </div>
+</div>
+
+<!-- seções de produtos -->
+
+<!-- RECOMENDADOS -->
+<section class="sectionprotudos">
+  <div class="container mx-auto">
+    <h2 class="h2style">Recomendados</h2>
+    <div class="divprodutos">
+      <!-- Produto 1 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/c093fadabda0787cee2ebd0ca0110775919457f1c99c88460a520538eaa834cf-7896224836098.jpg" alt="Produto 1" class="w-48 h-48 object-cover rounded-lg">
+        <h3 class="preco">R$12,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">ACHOCOL CHOCOLATTO 3 CORACOES SACHE 700G</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 2 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/16121-1.jpg">
+        <h3 class="preco">R$9,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">BATATA RUFFLES 115G CEBOLA E SALSA</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 3 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/dd8cc3a0e6c2f141d247590b82bb419f582c99051dacdd005876f9d8ad29d32f-vartechs-858600.jpg">
+        <h3 class="preco">R$46,99 KG</h3>
+        <p class="mt-2 text-gray-700 text-center">ALCATRA BOVINO</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 4 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/12484-1.jpg">
+        <h3 class="preco">R$11,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">ALHO FRITO SUPER ALHO COPO 100G</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 5 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/e34aa0f3a02d9529a8c08aa04e10547f3e8ec1e64c2958f959588f83e157b875-7898928577628.jpg">
+        <h3 class="preco">R$18,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">ADOCANTE FINN ASPARTAME C/50X8G</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 6 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/1b05c27987be6c9923a59ab0ff7c17e055f11b869f6cc71a8f93cb91ff6c0108-7891910020096.jpg">
+        <h3 class="preco">R$5,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">ADOCANTE UNIAO FIT 500G</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 2º section: CARNES, AVES E PEIXES -->
+<section class="sectionprotudos">
+  <div class="container mx-auto">
+    <h2 class="h2style">CARNES, AVES E PEIXES</h2>
+    <div class="divprodutos">
+      <!-- Produto 1 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/18012-1.png">
+        <h3 class="preco">R$54,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">FILE DE TILAPIA CANDU CONG 1KG PREMIUM</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 2 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/1893-1.jpg">
+        <h3 class="preco">R$22,99 KG</h3>
+        <p class="mt-2 text-gray-700 text-center">COSTELA BOVINO RIPA</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 3 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/2039-1.jpg">
+        <h3 class="preco">R$33,99 KG</h3>
+        <p class="mt-2 text-gray-700 text-center">LINGUICA CALABRESA SADIA</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 4 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/1887-1.jpg">
+        <h3 class="preco">R$35,99 KG</h3>
+        <p class="mt-2 text-gray-700 text-center">LAGARTO BOVINO</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 5 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/3423-1.jpg">
+        <h3 class="preco">R$27,99 KG</h3>
+        <p class="mt-2 text-gray-700 text-center">FILE DE PEITO DE FRANGO BIG FRANGO</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 6 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/1890-1.jpg">
+        <h3 class="preco">R$39,99 KG</h3>
+        <p class="mt-2 text-gray-700 text-center">FRALDINHA BOVINO</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3º section Bebidas -->
+<section class="sectionprotudos">
+  <div class="container mx-auto">
+    <h2 class="h2style">BEBIDAS</h2>
+    <div class="divprodutos">
+      <!-- Produto 1 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/32042-1.jpg">
+        <h3 class="preco">R$47,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">APER WHISKY NATU NOBILIS 1L</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 2 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/4616fbba3729b7c61b9fa21899812fea6073eede7cc0ae8bd0debc749197603f-7896023080487.jpg">
+        <h3 class="preco">R$16,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">BEB ALC MISTA PRESIDENTE 900ML</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 3 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/11996-1.png">
+        <h3 class="preco">R$5,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">BEB LACTEA DA FAZENDA 800G MORANGO</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 4 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/00ae9f93ffffb356629405d2784b405bcfc449953552cc0c2ce052a773740d3f-7891000101926.jpg">
+        <h3 class="preco">R$7,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">BEBIDA LACTEA NESCAU 270ML SHAKE</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 5 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/23e760ea655af78ba0850628164316d4653ea0b449f95db2364aac1607199373-7891149210503.jpg">
+        <h3 class="preco">R$4,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">CERVEJA CARACU LATA 350ML</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 6 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/16576-1.jpg">
+        <h3 class="preco">R$9,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">ENERG MONSTER LATA 473ML KHAOTIC</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4º section limpeza -->
+<section class="sectionprotudos">
+  <div class="container mx-auto">
+    <h2 class="h2style">PRODUTOS DE LIMPEZA</h2>
+    <div class="divprodutos">
+      <!-- Produto 1 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/15549-1.jpg">
+        <h3 class="preco">R$13,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">AGUA SANITARIA OLIMPO 5L</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 2 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/2a8d0d0fc3e54ffce6538a939683e2a4e08f67264db8ac0f88080f37209ea9e6-7896075990734.jpg">
+        <h3 class="preco">R$22,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">AMAC ROUPA BABY SOFT 5L TOQUE CARINHO</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 3 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/a08e636c053223fc4741ccdfcfd88779c4f5b14db31229131ed8ab7cfec34c98-7891242010420.jpg">
+        <h3 class="preco">R$47,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">CERA INGLEZA PASTA 400G INCOLOR</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 4 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/4c0b622060f04760e5eb75f387cd37d75281428a69a10e17ed11defd5dca142c-7894650182208.jpg">
+        <h3 class="preco">R$16,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">DESINF PATO PURIFIC LV750PG500ML MARINE</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 5 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/8eb5f80a7346027b143fb08b1285cbcae92f7567499755d67f71da9e98281b23-7891024193006.jpg">
+        <h3 class="preco">R$7,89 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">DESINF PINHO SOL 500ML LAVANDA</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 6 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/a2e70813652d46b71f7d7a992f41a3bc90b760f5f9ff8ffb4999fa7395fc5452-7896098902042.jpg">
+        <h3 class="preco">R$2,59 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">DETERG YPE 500ML CAPIM LIMAO</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5º section MERCEARIA -->
+<section class="sectionprotudos">
+  <div class="container mx-auto">
+    <h2 class="h2style">MERCEARIA</h2>
+    <div class="divprodutos">
+      <!-- Produto 1 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/9111-1.png">
+        <h3 class="preco">R$8,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">ARROZ EMPORIO SAO JOAO 1KG INTEGRAL</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 2 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/50034-1.jpg">
+        <h3 class="preco">R$35,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">ARROZ TP1 PRATO FINO 5KG</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 3 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grcd2uh6cblo/b/vartechs-banco-produtos-imagens/o/c8a79b45de3beccb111037971aeb28ef40c1a54f8287571e5eb03c455075fc39-7897005101589.jpg">
+        <h3 class="preco">R$4,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">AVEIA KININO K-LIFE 170G FLOCOS FINOS</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 4 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/58738-1.jpg">
+        <h3 class="preco">R$7,49 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">BISC MARILAN 350G CRACKER AGUA E SAL</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 5 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/9110-1.jpg">
+        <h3 class="preco">R$8,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">FEIJAO PRETO EMPORIO SAO JOAO 1KG</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+      <!-- Produto 6 -->
+      <div class="subdiv">
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OWc8s6zo1KiKGqvzBMot4CTBO_pomOrApiUstFmbqkmLb42yaaKK6BP052i5jutj/n/grcd2uh6cblo/b/clientes-banco-produtos-imagens/o/supbuchaim/4188-1.jpg">
+        <h3 class="preco">R$6,99 UN</h3>
+        <p class="mt-2 text-gray-700 text-center">FEIJAO CARIOCA EMPORIO SAO JOAO 1KG</p>
+        <div class="mt-4 flex items-center space-x-2">
+          <label for="quantidade1" class="text-gray-700">Qtd:</label>
+          <input type="number" id="quantidade1" name="quantidade1" value="1" min="1" class="qtdinput">
+          <button class="botton">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="bg-gray-950 text-gray-200 py-8">
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Sobre Nós -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Sobre Nós</h3>
+      <p class="text-sm">
+        Somos uma empresa dedicada a oferecer os melhores produtos e serviços. Nosso objetivo é sua satisfação e confiança.
+      </p>
+    </div>
+    <!-- Links Úteis -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Links Úteis</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition">Produtos</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition">Sobre</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition">Contato</a></li>
+      </ul>
+    </div>
+    <!-- Redes Sociais -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Siga-nos</h3>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-blue-400 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M24 4.56a9.72 9.72 0 0 1-2.83.78 4.94 4.94 0 0 0 2.16-2.72 9.79 9.79 0 0 1-3.1 1.18A4.89 4.89 0 0 0 16.8 3a4.92 4.92 0 0 0-4.92 4.92c0 .39.04.76.12 1.12A13.92 13.92 0 0 1 1.67 3.17a4.89 4.89 0 0 0 1.52 6.56 4.89 4.89 0 0 1-2.22-.62v.06a4.93 4.93 0 0 0 3.95 4.83 5 5 0 0 1-2.21.08 4.93 4.93 0 0 0 4.6 3.43A9.84 9.84 0 0 1 .57 19.54a13.9 13.9 0 0 0 7.56 2.21c9.05 0 14-7.5 14-14v-.64A10 10 0 0 0 24 4.56z"/>
+          </svg>
+        </a>
+        <a href="#" class="hover:text-blue-400 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.04C6.48 2.04 2 6.48 2 12c0 4.99 3.64 9.13 8.36 9.88V15.5h-2.5v-3h2.5v-2.3c0-2.5 1.49-3.89 3.76-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56v1.96h2.74l-.44 3h-2.3v6.38C18.36 21.13 22 16.99 22 12c0-5.52-4.48-9.96-10-9.96z"/>
+          </svg>
+        </a>
+        <a href="#" class="hover:text-blue-400 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.23 5.924a4.94 4.94 0 0 0-3.68-3.68C16.87 1.87 12 1.87 12 1.87s-4.87 0-6.55.37a4.94 4.94 0 0 0-3.68 3.68C1.87 7.13 1.87 12 1.87 12s0 4.87.37 6.55a4.94 4.94 0 0 0 3.68 3.68c1.68.37 6.55.37 6.55.37s4.87 0 6.55-.37a4.94 4.94 0 0 0 3.68-3.68c.37-1.68.37-6.55.37-6.55s0-4.87-.37-6.55zm-10.23 9.37v-7.5l6 3.75-6 3.75z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Direitos Autorais -->
+  <div class="mt-6 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
+    © 2024 Diniz Supermercados Limitada  / CNPJ: 03.123.142/0002-15 / IE: 063171678 / Rua João dias de Oliveira 60, Pedrinhas - Juazeiro do Norte,CE 63.018-315
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Cliente</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+</head>
+<body class="bg-primary text-white-custom">
+    <!-- Header -->
+    <header class="bg-white-custom shadow-lg mb-8">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <!-- Logo -->
+            <a href="#">
+                <img src="https://github.com/italo-leonardo/Projeto_Diniz/blob/main/projeto/src/img/header-logo.png.png?raw=true" alt="Logo da Empresa" class="h-12">
+            </a>
+
+            <!-- Navegação -->
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="btn text-orange-600 hover:text-blue-500 transition-colors duration-300">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex flex-col items-center justify-center mb-8">
+        <div class="bg-white-custom shadow-2xl rounded-lg p-6 w-full max-w-md">
+            <!-- Seção para escolher tipo de cadastro -->
+            <section aria-labelledby="tipo-cadastro">
+                <h1 id="tipo-cadastro" class="text-xl font-bold mb-4 text-center text-primary">Tipo de cadastro</h1>
+                <div class="space-y-4">
+                    <button type="button" aria-label="Cadastro para Pessoa Física" 
+                            class="pessoabotton">
+                        Pessoa Física
+                    </button>
+                    <button type="button" aria-label="Cadastro para Pessoa Jurídica" 
+                            class="pessoabotton">
+                        Pessoa Jurídica
+                    </button>
+                </div>
+            </section>
+
+            <!-- Seção para informações comerciais -->
+            <section aria-labelledby="info-comercial" class="mt-8">
+                <h2 id="info-comercial" class="text-lg font-semibold mb-6 text-primary">Informações comerciais</h2>
+                <form action="#" method="post" class="space-y-4">
+                    <div>
+                        <label for="razao" class="block text-sm font-medium text-primary">Razão social</label>
+                        <input type="text" id="razao" name="razao" required 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <div>
+                        <label for="fantasia" class="block text-sm font-medium text-primary">Nome fantasia</label>
+                        <input type="text" id="fantasia" name="fantasia" required 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <div>
+                        <label for="cnpj" class="block text-sm font-medium text-primary">CNPJ</label>
+                        <input type="text" id="cnpj" name="cnpj" required 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <div>
+                        <label for="inscricao" class="block text-sm font-medium text-primary">Inscrição estadual</label>
+                        <input type="text" id="inscricao" name="inscricao" 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                </form>
+            </section>
+
+            <!-- Seção para informações pessoais -->
+            <section aria-labelledby="info-pessoal" class="mt-8">
+                <h2 id="info-pessoal" class="text-lg font-semibold mb-6 text-primary">Informações pessoais</h2>
+                <form action="#" method="post" class="space-y-4">
+                    <fieldset class="space-y-4">
+                        <legend class="text-sm font-medium mb-2 text-primary">Dados pessoais</legend>
+                        <div>
+                            <label for="nome" class="block text-sm font-medium text-primary">Nome</label>
+                            <input type="text" id="nome" name="nome" required 
+                                   class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                        <div>
+                            <label for="sobrenome" class="block text-sm font-medium text-primary">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome" required 
+                                   class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                        <div>
+                            <label for="dnascimento" class="block text-sm font-medium text-primary">Data de nascimento</label>
+                            <input type="date" id="dnascimento" name="dnascimento" required 
+                                   class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                        <div>
+                            <label for="cpf" class="block text-sm font-medium text-primary">CPF</label>
+                            <input type="text" id="cpf" name="cpf" required 
+                                   class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-primary">E-mail</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                        <div>
+                            <label for="cemail" class="block text-sm font-medium text-primary">Confirme o e-mail</label>
+                            <input type="email" id="cemail" name="cemail" required 
+                                   class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+            <!-- Seção para endereço -->
+            <section aria-labelledby="endereco" class="mt-8">
+                <h2 id="endereco" class="text-lg font-semibold mb-6 text-primary">Endereço de entrega</h2>
+                <form action="#" method="post" class="space-y-4">
+                    <div>
+                        <label for="cep" class="block text-sm font-medium text-primary">CEP</label>
+                        <input type="text" id="cep" name="cep" required 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <div>
+                        <label for="rua" class="block text-sm font-medium text-primary">Rua</label>
+                        <input type="text" id="rua" name="rua" required 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <div>
+                        <label for="numero" class="block text-sm font-medium text-primary">Número</label>
+                        <input type="number" id="numero" name="numero" required 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <div>
+                        <label for="comple" class="block text-sm font-medium text-primary">Complemento</label>
+                        <input type="text" id="comple" name="comple" 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <div>
+                        <label for="bairro" class="block text-sm font-medium text-primary">Bairro</label>
+                        <input type="text" id="bairro" name="bairro" required 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <div>
+                        <label for="cidade" class="block text-sm font-medium text-primary">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" required 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <div>
+                        <label for="estado" class="block text-sm font-medium text-primary">Estado</label>
+                        <input type="text" id="estado" name="estado" required 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <div>
+                        <label for="telefoneEn" class="block text-sm font-medium text-primary">Telefone</label>
+                        <input type="tel" id="telefoneEn" name="telefoneEn" required 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <div>
+                        <label for="ponto" class="block text-sm font-medium text-primary">Ponto de referência</label>
+                        <input type="text" id="ponto" name="ponto" 
+                               class="w-full p-2 border border-gray-300 rounded text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    <button type="submit" class="pessoabotton">
+                        Cadastrar
+                    </button>
+                </form>
+            </section>
+
+            <section aria-labelledby="relacionamento" class="mt-8">
+                <h2 id="relacionamento" class="flex justify-center text-lg font-semibold mb-6 text-primary">Relacionamento com o Cliente</h2>
+                <ul class="flex items-center justify-around text-sm space-x-6">
+                    <li>Telefone: 8835232220</li>
+                    <li>Email: sac@dinizsupermercados.com</li>
+                    <li>
+                        <a href="https://www.facebook.com/Dinizsupermercados/" target="_blank" 
+                           class="text-accent hover:text-opacity-80">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/diniz_supermercados/" target="_blank" 
+                           class="text-accent hover:text-opacity-80">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white-custom text-sm py-4 mt-8 shadow-inner">
+        <section class="max-w-md mx-auto text-center">
+            <h2 class="font-bold text-lg mb-2">Quem Somos</h2>
+            <p>
+                Somos uma empresa que presta serviço de compras on-line, fornecendo produtos de qualidade de forma rápida e eficiente.
+            </p>
+        </section>
+    </footer>
+</body>
+</html>

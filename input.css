@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navtext {
+    @apply text-white hover:text-blue-600 transition-colors duration-300;
+}
+
+.imgscarrosel{
+    @apply w-full flex-shrink-0
+}
+
+.botton{
+    @apply ml-2 bg-blue-500 text-white rounded-md px-4 py-1 hover:bg-orange-600 transition-colors duration-300;
+}
+
+.sectionprotudos{
+    @apply pt-20 pb-12 px-4 md:px-12 bg-blue-50
+}
+
+.divprodutos{
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center
+}
+
+.subdiv{
+    @apply p-6 bg-white rounded-lg flex flex-col items-center justify-end
+}
+
+.preco{
+    @apply text-xl font-semibold text-black mt-4
+}
+.h2style{
+    @apply text-3xl font-bold text-center text-black mb-8
+}
+
+.qtdinput{
+    @apply p-1 border border-gray-300 rounded-md w-16 text-center
+}
+
+/* cadastro */
+
+.pessoabotton {
+    @apply w-full bg-blue-500 text-white hover:bg-orange-600 transition-colors duration-300 font-medium py-2 px-4 rounded
+}
+
+@layer utilities {
+    .bg-primary { background-color: #1966FF; }
+    .text-primary { color: #1966FF; }
+    .bg-accent { background-color: #FF7B01; }
+    .text-accent { color: #FF7B01; }
+    .bg-white-custom { background-color: #FFFFFF; }
+    .text-white-custom { color: #000000; }
+}
